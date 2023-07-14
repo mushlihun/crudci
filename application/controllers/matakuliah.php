@@ -7,10 +7,10 @@ class matakuliah extends MY_Controller {
 	{
         $this->db->select('*');
         $this->db->from('mata_kuliah');
-        // $this->db->where('kode', ['1']);
         $query = $this->db->get();
         $this->mViewData['data_mk'] = $query->result();
-        
+        $state_fakultas = isset($_GET['id']) ? $_GET['id'] : null;
+        $this->mViewData['state_fakultas'] = $state_fakultas;
         // $data = isset($_GET['mata_kuliah']) ? $_GET['mata_kuliah'] : null;
 
 		// $state = isset($_GET['state']) ? $_GET['state'] : null;
