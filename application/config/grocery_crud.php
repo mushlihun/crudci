@@ -54,16 +54,11 @@
 
 	// common fields to "display as"
 	$config['grocery_crud_display_as'] = array(
-	    'mst_mahasiswa'         => 'Data Universitas',
-		'group_id'				=> 'Group',
-		'image_url'				=> 'Image',
-		'thumbnail_url'			=> 'Thumbnail',
-
-		'author_id'				=> 'Author',
-		'category_id'			=> 'Category',
-
-        'id_prodi'              => 'Prodi',
-        'id_kategori_cpl'       => 'Kategori CPL',
-
-		'mata_kuliah'         => 'Data Mata Kuliah',
+	    'kota'				=> 'Data Kota',
+		'mata_kuliah'		=> 'Data Mata Kuliah',
+		'nilai'				=> 'Data Nilai',
+		'program_studi'		=> 'Program Studi',
+		'pejabat'			=> 'Data Pejabat',
+		'transkrip_nilai'	=> 'Transkrip Nilai',
+		'taruna'			=> 'Data Taruna'
 	);

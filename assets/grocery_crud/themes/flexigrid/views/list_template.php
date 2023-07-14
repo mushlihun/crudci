@@ -184,4 +184,13 @@ if($success_message !== null){?>
 	</div>
 	<?php echo form_close(); ?>
 	</div>
+	<div class="tDiv2">
+		<a href='<?php base_url()?>' title='Back' class='add-anchor add_button'>
+		<div class="fbutton">
+			<div>
+				<span class="delete"><?php base_url() ?> Back</span>
+			</div>
+		</div>
+		</a>
+	</div>
 </div>
