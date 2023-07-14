@@ -22,24 +22,21 @@
                     <thead>
                     <tr>
                         <th>No</th>
-                        <th>Kode</th>    
+                        <th>Kode</th>
                         <th>Nama Mata Kuliah</th>
                         <th>SKS</th>
                         <th>Nilai Angka</th>
                         <th>Nilai Huruf</th>
                         <th>Semester</th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php
-                    // $kd_mata_kuliah = isset($data_mk->kd_mata_kuliah) ? $data_mk->kd_mata_kuliah : '';
-                    // $kd_mata_kuliah = $data_mk->kd_mata_kuliah;
-                    //foreach($mata_kuliah AS $no -> $val){
-                        echo "$title";
-                        
-/*                        ?>
+                    foreach($data_mk AS $val){                        
+                        ?>
                         <tr>
-                            <td><?= ++$no ?></td>
+                            <td><?= $val->id ?></td>
                             <td><?= $val->kode ?></td>
                             <td><?= $val->nama_mata_kuliah ?></td>
                             <td><?= $val->sks ?></td>
@@ -56,8 +53,7 @@
                                 </a>
                             </td>
                         </tr>
-                    <?php *///}
-                     ?>
+                    <?php } ?>
                     </tbody>
                 </table>
             </div>

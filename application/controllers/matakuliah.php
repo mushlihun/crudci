@@ -7,6 +7,7 @@ class matakuliah extends MY_Controller {
 	{
         $this->db->select('*');
         $this->db->from('mata_kuliah');
+        // $this->db->where('kode', ['1']);
         $query = $this->db->get();
         $this->mViewData['data_mk'] = $query->result();
         
