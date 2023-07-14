@@ -20,7 +20,7 @@ class matakuliah extends MY_Controller {
 
 		$this->db->select('*');
 		$query = $this->db->get('mata_kuliah');
-		$this->mViewData['mata_kuliah'] = $query->result();
+		$this->mViewData['data'] = $query->result();
 
         $kode_makul = isset($_GET['kode']) ? $_GET['kode'] : null;
 

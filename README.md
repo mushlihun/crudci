@@ -44,7 +44,7 @@ This repository contains setup for rapid development:
 
 ### Demo Project
 
-A demo repository can be found from: https://github.com/waifung0207/ci_bootstrap_3_demo
+A demo repository can be found from: https://github.com/mushlihun/crudci
 
 
 ### Server Environment
@@ -165,7 +165,7 @@ Admin Panel - Home:
 
 ![](screenshots/admin_home.png "Admin Panel Home")
 
-More screenshots can be viewed from the [screenshots folder](https://github.com/waifung0207/ci_bootstrap_3/blob/master/screenshots/) under this repository.
+More screenshots can be viewed from the [screenshots folder](https://github.com/mushlihun/crudci/blob/master/screenshots/) under this repository.
 
 
 ### TODO
