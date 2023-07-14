@@ -9,17 +9,8 @@ class matakuliah extends MY_Controller {
         $this->db->from('mata_kuliah');
         $query = $this->db->get();
         $this->mViewData['data_mk'] = $query->result();
-	    $title = 'Mata Kuliah';
-        $this->mPageTitle = $title;
-        $this->mViewData['title'] = $title;
-		$this->render('mata_kuliah/index', 'with_breadcrumb');
         
-	}
-
-	public function mata_kuliah()
-    {
-       
-		// $data = isset($_GET['mata_kuliah']) ? $_GET['mata_kuliah'] : null;
+        // $data = isset($_GET['mata_kuliah']) ? $_GET['mata_kuliah'] : null;
 
 		// $state = isset($_GET['state']) ? $_GET['state'] : null;
         // $id = isset($_GET['id']) ? $_GET['id'] : null;
@@ -53,5 +44,11 @@ class matakuliah extends MY_Controller {
         // }
 
         // return;
-    }
+
+	    $title = 'Mata Kuliah';
+        $this->mPageTitle = $title;
+        $this->mViewData['title'] = $title;
+		$this->render('mata_kuliah/index', 'with_breadcrumb');
+        
+	}
 }
