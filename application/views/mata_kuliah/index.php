@@ -1,7 +1,6 @@
 <section class="services">
     <div class="container" style="color:black;">
         <div class="panel panel-default">
-
             <div align="right">
                 <a href="<?= base_url() ?>mata_kuliah?state=add">
                     <img src="<?= base_url() ?>assets/images/add_green.png" width="80px" height="90px" style="margin-right:120px; margin-top:10px;">
@@ -23,17 +22,22 @@
                     <thead>
                     <tr>
                         <th>No</th>
-                        <th>NIK</th>    
-                        <th>Nama</th>
-                        <th>Nama Pengguna</th>
-                        <th>Opsi</th>
+                        <th>Kode</th>    
+                        <th>Nama Mata Kuliah</th>
+                        <th>SKS</th>
+                        <th>Nilai Angka</th>
+                        <th>Nilai Huruf</th>
+                        <th>Semester</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php
-                    $id = isset($data->id) ? $data->id : '';
-                    foreach($data AS $no -> $val){
-                        ?>
+                    // $kd_mata_kuliah = isset($data_mk->kd_mata_kuliah) ? $data_mk->kd_mata_kuliah : '';
+                    // $kd_mata_kuliah = $data_mk->kd_mata_kuliah;
+                    //foreach($mata_kuliah AS $no -> $val){
+                        echo "$title";
+                        
+/*                        ?>
                         <tr>
                             <td><?= ++$no ?></td>
                             <td><?= $val->kode ?></td>
@@ -52,7 +56,8 @@
                                 </a>
                             </td>
                         </tr>
-                    <?php } ?>
+                    <?php *///}
+                     ?>
                     </tbody>
                 </table>
             </div>
@@ -60,7 +65,7 @@
     </div>
 </section>
 
-<script>
+<!-- <script>
     $(document).ready(function () {
         $('#example1').DataTable({
             responsive: true,
@@ -83,4 +88,4 @@
             return false;
         }
     }
-</script>
+</script> -->
